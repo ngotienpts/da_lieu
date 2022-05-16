@@ -1,0 +1,26 @@
+.slide-top {
+    max-width: 1920px;
+}
+.slide-top__img {
+    max-height: 700px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.slide-top .slick-next {
+    right: 20px;
+}
+.slide-top .slick-prev {
+    left: 20px;
+    z-index: 2;
+}
+.slide-top .slick-next:before {
+    content: '\276F';
+}
+.slide-top .slick-prev:before {
+    content: '\276E';
+}
+.slide-top .slick-prev:before,
+.slide-top .slick-next:before {
+    font-size: 40px;
+    color: #246cb6;
+}

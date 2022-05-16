@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@media (max-width: 64em) {
+  .d-none {
+    display: none;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  #main {
+    padding-top: 0;
+  }
+
+  .navbar-mb {
+    padding: 0.8rem 1.25rem;
+    background-color: #284fa7;
+  }
+
+  .navbar-mb-logo {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  .navbar-mb-logo img {
+    width: auto;
+    height: 35px;
+  }
+
+  .header-block__item:first-child {
+    display: block;
+    line-height: 1;
+  }
+
+  .navigation-bar-item + .navigation-bar-item {
+    margin-left: 0;
+  }
+
+  .nav-related {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0.9375rem;
+  }
+
+  .nav-related-link {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.375rem 0.75rem;
+  }
+
+  .nav-related-link + .nav-related-link {
+    margin-left: 0.5rem;
+  }
+
+  .navigation-bar {
+    padding: 0.75rem 0;
+  }
+
+  .navigation-bar-list--mb {
+    max-width: 600px;
+  }
+
+  .navigation-bar-list--mb .slick-slide + .slick-slide {
+    margin-left: 1.25rem;
+  }
+
+  .navigation-bar-list--mb .slick-next {
+    right: 0;
+    background: linear-gradient(to right, #fff0, #00000085);
+    width: 3.375rem;
+    height: 2.75rem;
+  }
+
+  .navigation-bar-list--mb .slick-prev {
+    opacity: 0;
+  }
+
+  .navigation-bar-list--mb .slick-next:before {
+    content: "⇢";
+    opacity: 1;
+    font-size: 1.5rem;
+    line-height: 0.5;
+  }
+
+  .navigation-bar-wrapper {
+    background: #284fa7;
+  }
+
+  .header-block__link.active.fix-size {
+    font-size: 1.5rem;
+  }
+
+  .header-block__link.active.fix-size.fix-upper {
+    text-transform: uppercase;
+  }
+
+  /*============================================================================     cate*/
+}
+
+/*# sourceMappingURL=responsive.css.map */

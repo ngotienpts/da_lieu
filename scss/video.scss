@@ -1,0 +1,25 @@
+.play-mutimedia.small {
+    left: 0.625rem;
+    bottom: 0.625rem;
+    top: auto;
+    right: auto;
+}
+.play-mutimedia.small .mutimedia-player__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+}
+.video-one {
+    display: grid;
+    grid-template-columns: 1fr 290px 290px;
+    grid-gap: 1.875rem 1.25rem;
+}
+.video-one__large {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.video-left {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.25rem;
+}
