@@ -66,6 +66,44 @@ document.addEventListener("DOMContentLoaded", function () {
         cssEase: 'linear',
       });
     },
+    // slide doctors
+    slideDoctor: function () {
+      $(".main-team-doctors-container").slick({
+        infinite: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    },
+    // slide index
+    slideIndex:function(){
+      $(".tabs")
+        .not(".slick-initialized")
+        .slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: '.tab-content',
+          focusOnSelect: true,
+          infinite: false,
+        });
+      $(".tab-content").not(".slick-initialized").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.tabs',
+        infinite: true,
+        dots: false,
+        fade: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        adaptiveHeight: true,
+
+      });
+    },
     // scroll top
     scrollFunc: function () {
       if (backTop) {
@@ -97,6 +135,10 @@ document.addEventListener("DOMContentLoaded", function () {
       this.windowScroll();
       // slide idea
       this.slideTop();
+      // slide doctors
+      this.slideDoctor();
+      // slide index
+      this.slideIndex();
     },
   };
 
