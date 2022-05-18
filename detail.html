@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="./images/favicon-32x32.png" sizes="32x32"> -->
+    <title>Bênh viện da liễu Trung Ương</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./font-awesome/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- main header -->
+    <section class="nav-header-wrapper bg-gray-fa border-bottom-ed">
+      <div class="nav-header w-1140 d-flex align-items-center justify-content-between">
+        <div class="nav-header__left d-flex align-items-center">
+          <div class="nav-header__left-item fs-14 px-10">
+            <span>
+              <i class="fas fa-map-marker-alt nav-header__left-icon text-white"></i>
+              15A Phương Mai, Đống Đa, Hà Nội
+            </span>
+          </div>
+          <div class="nav-header__left-item fs-14 px-10">
+            <a href="#">
+              <span>
+                <i class="fas fa-phone-alt nav-header__left-icon text-white"></i>
+                19006951
+              </span>
+            </a>
+          </div>
+          <div class="nav-header__left-item nav-header__left-item--calender fs-14 px-10 icon">
+            <div class="nav-header__left-item-dropdown">
+              <span>
+                <i class="fas fa-clock nav-header__left-icon text-white"></i>
+                Lịch khám
+                <i class="fas fa-caret-down ml-10"></i>
+              </span>
+            </div>
+            <ul class="working-time">
+              <li class="working-time__weekday working-time__item">
+                <h3 class="working-time__title">Ngày thường</h3>
+                <div class="working-time-Intime">
+                  <h3 class="working-time-Intime-title">Trong giờ</h3>
+                  <p class="work">Sáng: 7h00-12h00</p>
+                  <p class="work">Chiều: 13h30-16h30</p>
+                </div>
+                <div class="working-time-Overtime">
+                  <h3 class="working-time-Overtime-title">Ngoài giờ</h3>
+                  <p class="work">Sáng: 5h45-7h00</p>
+                  <p class="work">Chiều: 16h30- 18h00</p>
+                </div>
+              </li>
+              <li class="working-time__weekend working-time__item">
+                <h3 class="working-time__title">Thứ 7 – Chủ nhật</h3>
+                <div class="working-time-Intime">
+                  <h3 class="working-time-Intime-title">Trong giờ</h3>
+                  <p class="work">Sáng: 7h30-12h00</p>
+                  <p class="work">Chiều: 14h-17h30</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-header__right d-flex align-items-center">
+          <div class="nav-header__right-item">
+            <a href="#" class="fs-13 text-uppercase px-10">Khoa phòng</a>
+          </div>
+          <div class="nav-header__right-item">
+            <a href="#" class="nav-header__right-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="nav-header__right-yt">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="nav-header__right-item">
+            <div class="nav-header__right-lang">
+              <a href="#" class="menu-lang-en" title="English">EN</a>
+            </div>
+            <div class="nav-header__right-lang active">
+              <a href="#" class="menu-lang-vn" title="Vietnamese">VN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main header -->
+    <!-- sub menu mb -->
+    <section class="sub-menu-mb-wrapper d-lg-none d-block">
+      <div class="sub-menu-mb">
+        <!-- close -->
+        <div class="close-sub-menu">
+          <i class="fas fa-times text-red-cc0 fs-24"></i>
+        </div>
+        <!-- end close -->
+        <!-- content -->
+        <ul class="sub-menu-mb-content">
+          <!--  -->
+          <li class="sub-menu-mb-item sub-menu-mb-item--search">
+            <div class="search-mb">
+              <form action="">
+                <div class="d-flex align-items-center position-relative">
+                  <input type="text" class="form-control-t form-search-mb fs-12" placeholder="Tìm kiếm...">
+                  <button class="btn-search-mb fs-14 "><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!--  -->
+          <li class="sub-menu-mb-item bg-gray-f9">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class=" fw-600 fs-16 text-uppercase">Trang nhất</a>
+            </div>
+          </li>
+          <!--  -->
+          <li class="sub-menu-mb-item">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class=" fw-600 fs-16 text-uppercase">Đời sống</a>
+              <i class="fas fa-angle-down sub-menu-mb-item__icon"></i>
+            </div>
+            <ul class="sub-menu-mb-children">
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <li class="sub-menu-mb-item">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class=" fw-600 fs-16 text-uppercase">Đời sống</a>
+              <i class="fas fa-angle-down sub-menu-mb-item__icon"></i>
+            </div>
+            <ul class="sub-menu-mb-children">
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+            </ul>
+          </li>
+          <!-- working time -->
+          <li>
+            <ul class="sub-menu-mb-working-time fs-15 font-primary">
+              <!--  -->
+              <li class="sub-menu-mb-working-time-item">
+                <h3 class="text-uppercase">ngày thường</h3>
+                <ul>
+                  <li>
+                    <h3>Trong giờ</h3>
+                    <ul>
+                      <li>Sáng: 7h00 - 12h00</li>
+                      <li>Chiều: 13h30 - 16h30</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>Ngoài giờ giờ</h3>
+                    <ul>
+                      <li>Sáng: 5h45 - 7h00</li>
+                      <li>Chiều: 16h30 - 18h00</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="sub-menu-mb-working-time-item">
+                <h3 class="text-uppercase">Thứ 7 - Chủ nhật</h3>
+                <ul>
+                  <li>
+                    <ul>
+                      <li>Sáng: 7h30 - 12h00</li>
+                      <li>Chiều: 14h00 - 17h30</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+            </ul>
+          </li>
+          <!-- end working time -->
+          <!-- info -->
+          <li>
+            <aside id="sow-editor-2" class="widget widget_sow-editor">
+              <h3>TRANG THÔNG TIN ĐIỆN TỬ - BỆNH VIỆN DA LIỄU TRUNG ƯƠNG</h3>
+              <div class="addressinfo-mb">
+                <p>Địa chỉ: 15A - Phương Mai - Quận Đống Đa - Hà Nội<br>
+                Điện thoại: 024.32222944<br>
+                Email: benhviendalieutrunguong@dalieu.vn<br>
+                Giấy phép số 79/GP-TTĐT do Cục PTTH và TTĐT - Bộ TT&amp;TT cấp ngày 30/6/2016.<br>
+                Trưởng ban biên tập: PGS.TS Nguyễn Văn Thường - Giám đốc Bệnh viện<br>
+                Copyright: National hospital of dermatology and venereology<br>
+                Bản quyền: Bệnh viện Da liễu Trung ương
+                Ghi rõ nguồn: Bệnh viện Da liễu Trung ương hoặc https://dalieu.vn khi sử dụng lại thông tin từ website này
+                </p>
+              </div>
+            </aside>
+          </li>
+          <!-- end info -->
+        </ul>
+        <!-- end content -->
+
+        
+      </div>
+    </section>
+    <!-- end sub menu mb -->
+    <!-- header -->
+    <header id="header">
+      <!-- navigation bar-->
+      <section class="navigation-bar-wrapper bg-white">
+        <div class="w-1140 navigation-bar">
+          <!-- logo -->
+          <div class="navigation-bar__logo">
+            <a href="#">
+              <img src="./images/logo-full-green-new.svg" alt="" class="navigation-bar__logo-img">
+            </a>
+          </div>
+          <!-- end logo -->
+          <!-- pc -->
+          <ul class="navigation-bar-list d-flex align-items-center">
+            <li class="navigation-bar-item navigation-bar-item-hide">
+              <div class="navigation-bar-item__title fw-600 text-uppercase">
+                <a href="#" class="">Trang chủ</a>
+              </div>
+            </li>
+            <li class="navigation-bar-item navigation-bar-item-hide">
+              <div class="navigation-bar-item__title font-primary fw-600 text-uppercase">
+                <a href="#" class="">Giới thiệu</a>
+              </div>
+              <ul class="navigation-bar-item__dropdown">
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Về chúng tôi</a>
+                  <ul class="navigation-bar-item__dropdown-children">
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                  <ul class="navigation-bar-item__dropdown-children">
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-bar-item navigation-bar-item-hide">
+              <div class="navigation-bar-item__title font-primary fw-600 text-uppercase">
+                <a href="#" class="">Hội nghị - hội thảo</a>
+              </div>
+              <ul class="navigation-bar-item__dropdown">
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-bar-item fs-20 navigation-search">
+              <a href="#" class="text-blue-246">
+                <i class="fas fa-search"></i>
+              </a>
+              <div class="navigation-search-form">
+                <form action="">
+                  <input type="search" class="form-control-t search-header-input">
+                </form>
+              </div>
+            </li>
+          </ul>
+          <!-- end pc -->
+
+          <!-- mb -->
+          <div class="navigation-bar-mb align-items-center">
+            <div class="nav-header__right-item">
+              <div class="nav-header__right-lang">
+                <a href="#" class="menu-lang-en" title="English">EN</a>
+              </div>
+              <div class="nav-header__right-lang active">
+                <a href="#" class="menu-lang-vn" title="Vietnamese">VN</a>
+              </div>
+            </div>
+
+            <div class="menu-bar-icon-mb ml-10 show-submenu">
+              <div class="bar-icon-mb"></div>
+            </div>
+          </div>
+          <!-- end mb -->
+        </div>
+      </section>
+      <!-- end navigation bar-->
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      <section class="detail-wrapper">
+          <div class="detail-block w-1140" id="sticky-detail">
+              <!-- left -->
+              <div class="cate-left leftSidebarDetail fw-300">
+                  <!-- categories -->
+                  <div class="categories-navbar w-1140 fs-13 d-flex mb-20 font-primary">
+                      <a href="#" class="text-blue-246 category-navbar">Hội nghị - hội thảo 2022</a>
+                      <a href="#" class="text-blue-246 category-navbar">Hội nghị da liêu toàn quốc thường niên 2022</a>
+                      <a href="#" class="text-blue-246 category-navbar">Tin hoạt động</a>
+                  </div>
+                  <!-- end categories -->
+                  <!-- title -->
+                  <h1 class="detail-title fs-26 font-primary text-gray-443 fw-500 mb-10">Còn 1 tuần nữa là đến….Hội nghị Da liễu Toàn quốc thường niên 2022 & Kỷ niệm 40 năm thành lập Bệnh viện Da liễu Trung ương 1982-2022</h1>
+                  <!-- end title -->
+
+                  <!-- public -->
+                  <div class="detail-public fs-13 text-uppercase">
+                      <span>posted 16/5/2022</span>
+                      <span>admin 3</span>
+                  </div>
+                  <!-- end public -->
+
+                  <!-- container -->
+                  <div class="detail-container">
+                      <p>Hội nghị hứa hẹn sẽ là một dịp quý giá để đội ngũ Y bác sĩ, các cán bộ nhân viên y tế trong nước và quốc tế cùng chia sẻ kinh nghiệm, cập nhật những kiến thức mới, hướng tới mục tiêu nâng cao chất lượng chuyên môn chẩn đoán, điều trị, chăm sóc người bệnh.</p>
+                      <p>Thời gian: Thứ 6 và thứ 7 ngày 20 – 21/05/2022</p>
+                      <p> Địa điểm tổ chức: Khách sạn Vinpearl – 27 Trần Phú, P. Điện Biên, Tp. Thanh Hóa</p>
+                      <p>Địa điểm tổ chức: Khách sạn Vinpearl – 27 Trần Phú, P. Điện Biên, Tp. Thanh Hóa</p>
+                      <p>Ban tổ chức xin gửi thông tin Chủ tọa và các báo cáo viên, cùng với lịch trình của Hội nghị để Quý đại biểu tham dự bố trí thời gian, sắp xếp theo dõi chủ đề mà mình quan tâm.</p>
+                  </div>
+                  <!-- end container -->
+
+                  <!-- pagination -->
+                  <ul class="pagination font-primary pt-20 mt-20 d-flex fw-300 fs-15">
+                    <li class="pagi-item active">
+                        <a href="#" class="pagi-link">1</a>
+                    </li>
+                    <li class="pagi-item">
+                        <a href="#" class="pagi-link">2</a>
+                    </li>
+                    <li class="pagi-item">
+                        <a href="#" class="pagi-link">3</a>
+                    </li>
+                    <li class="pagi-item">
+                        <a href="#" class="pagi-link">4</a>
+                    </li>
+                    <li class="pagi-item">
+                        <a href="#" class="pagi-link">Tiếp theo</a>
+                    </li>
+                  </ul>
+                  <!-- end pagination -->
+              </div>
+              <!-- end left -->
+              <!-- right -->
+              <div class="cate-right rightSidebarDetail">
+                <div class="ads-pc d-lg-block d-none">
+                    <a href="#">
+                        <img src="./images/ads.png" alt="">
+                    </a>
+                </div>
+              </div>
+              <!-- end right -->
+          </div>
+        </section>
+
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer id="footer" class="bg-blue-344">
+      <!-- back top -->
+      <div id="back-top"><i class="fas fa-angle-up text-white"></i></div>
+      <!-- end back top -->
+
+      <!-- phone -->
+      <div class="phonemenow is-animating">	
+        <div class="ringphone">	</div>
+        <div class="phonenumber">
+          <a class="" href="tel:1900 6951">1900 6951</a>
+        </div>
+      </div>
+      <!-- end phone -->
+      <div class="w-1140">
+        <!-- address info -->
+        <div class="addressinfo text-center font-primary">
+          <h3 class="text-white mb-10">TRANG THÔNG TIN ĐIỆN TỬ - BỆNH VIỆN DA LIỄU TRUNG ƯƠNG</h3>
+          <p>Địa chỉ: 15A - Phương Mai - Quận Đống Đa - Hà Nội<br>
+          Điện thoại: 024.32222944<br>
+          Email: benhviendalieutrunguong@dalieu.vn<br>
+          Giấy phép số 79/GP-TTĐT do Cục PTTH và TTĐT - Bộ TT&amp;TT cấp ngày 30/6/2016.<br>
+          Trưởng ban biên tập: PGS.TS Nguyễn Văn Thường - Giám đốc Bệnh viện<br>
+          Copyright: National hospital of dermatology and venereology<br>
+          Bản quyền: Bệnh viện Da liễu Trung ương
+          Ghi rõ nguồn: Bệnh viện Da liễu Trung ương hoặc https://dalieu.vn khi sử dụng lại thông tin từ website này
+          </p>
+        </div>
+        <!-- end address info -->
+  
+        <!-- social -->
+        <div class="footer-social d-flex align-items-center justify-content-center">
+          <a href="#" class="footer-social-item footer-social-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="footer-social-item footer-social-yt">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <!-- end social -->
+        
+        <!-- navbar footer -->
+        <ul class="footer-navbar fs-14 d-flex align-items-center justify-content-center font-primary">
+          <li class="footer-navbar-item">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Giới thiệu</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Hội nghị - Hội thảo</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Tin hoạt động</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Kỹ thuật cao</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Chuyên môn</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Giáo dục sức khỏe</a>
+          </li>
+        </ul>
+        <!-- end navbar footer -->
+        
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./slick/slick-1.8.1/slick/slick.js"></script>
+    <script src="./font-awesome/fontawesome-free-5.15.4-web/js/fontawesome.min.js"></script>
+    <script src="./js/ResizeSensor.js"></script>
+    <script src="./js/theia-sticky-sidebar.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

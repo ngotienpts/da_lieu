@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // width document
   var widthDoc = document.querySelector("body");
 
+  //  show search pc
+  var searchPc = document.querySelector('.navigation-search');
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -21,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
           document.documentElement.scrollTop = 0;
         };
       }
+
+
       // show sub menu
       if (showSubMenu) {
         showSubMenu.forEach(function(index){
@@ -31,23 +36,32 @@ document.addEventListener("DOMContentLoaded", function () {
           };
         })
       }
+
+
       if (subMenu) {
-        var subListMenu = subMenu.querySelectorAll(".sub-menu-mb-item");
+        var showChildrenMenu = subMenu.querySelectorAll(".sub-menu-mb-item__icon");
         var closeSubMenu = subMenu.querySelector(".close-sub-menu");
-        subListMenu.forEach(function (a) {
-          if (a.querySelector(".sub-menu-mb-icon")) {
-            a.querySelector(".sub-menu-mb-icon").onclick = function () {
-              if (a.classList.contains("active")) {
-                a.classList.remove("active");
-              } else {
-                a.classList.add("active");
-              }
-            };
+        showChildrenMenu.forEach(function (a) {
+          a.onclick = function(){
+            a.parentElement.parentElement.classList.toggle('active')
           }
         });
         closeSubMenu.onclick = function () {
           subMenu.classList.remove("active");
         };
+      }
+
+      // show search
+      if(searchPc){
+        searchPc.querySelector('.fa-search').onclick = function(){
+          searchPc.parentElement.classList.toggle('hide-items');
+          searchPc.classList.toggle('active');
+        }
+      }
+      
+      if(widthDoc && widthDoc.clientWidth < 768){
+        // slide idea
+        _this.slideFeatures();
       }
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
@@ -76,6 +90,15 @@ document.addEventListener("DOMContentLoaded", function () {
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          }
+        ],
       });
     },
     // slide index
@@ -102,6 +125,33 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplaySpeed: 2000,
         adaptiveHeight: true,
 
+      });
+    },
+    // slide one
+    slideFeatures: function () {
+      $(".slide-one").slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        dots: true,
+      });
+    },
+    // sticky sidebar cate
+    stickySlidebarCate:function(){
+      $('.leftSidebarCate, .rightSidebarCate').theiaStickySidebar({
+        'containerSelector':'#sticky-cate',
+        'additionalMarginTop': 100,
+        'additionalMarginBottom': 20,
+      });
+    },
+    // sticky sidebar detail
+    stickySlidebarDetail:function(){
+      $('.leftSidebarDetail, .rightSidebarDetail').theiaStickySidebar({
+        'containerSelector':'#sticky-detail',
+        'additionalMarginTop': 100,
+        'additionalMarginBottom': 20,
       });
     },
     // scroll top
@@ -139,6 +189,10 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideDoctor();
       // slide index
       this.slideIndex();
+      // sticky sidebar cate
+      this.stickySlidebarCate();
+      // sticky sidebar detail
+      this.stickySlidebarDetail();
     },
   };
 
