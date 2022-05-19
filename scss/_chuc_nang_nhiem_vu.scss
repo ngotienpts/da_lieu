@@ -1,0 +1,31 @@
+.mandates {
+    padding: 30px 0;
+    max-width: 789px;
+    margin: auto;
+}
+.mandates-heading {
+    margin: 10px 0 30px;
+    position: relative;
+}
+.mandates-heading:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #ededed;
+    width: 100px;
+    height: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    bottom: -20px;
+    left: calc(50% - 50px);
+}
+.mandates-content {
+    line-height: 1.7;
+}
+.mandates-content p {
+    margin-bottom: 20px;
+}
+.mandates-content strong {
+    font-weight: bold;
+}

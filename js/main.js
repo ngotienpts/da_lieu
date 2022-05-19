@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
   //  show search pc
   var searchPc = document.querySelector('.navigation-search');
 
+  // show thanh qua dat duoc
+  var achievements = document.querySelectorAll('.achievement-heading');
+
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -59,6 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       
+
+      // show thanh qua dat duoc
+      if(achievements){
+        achievements.forEach(function(a){
+          a.onclick = function(){
+            a.parentElement.classList.toggle('open')
+          }
+        })
+      }
       if(widthDoc && widthDoc.clientWidth < 768){
         // slide idea
         _this.slideFeatures();

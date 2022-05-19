@@ -163,6 +163,10 @@
   .detail-block {
     display: block;
   }
+
+  .mandates {
+    padding: 30px 15px;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

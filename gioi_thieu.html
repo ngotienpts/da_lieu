@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="./images/favicon-32x32.png" sizes="32x32"> -->
+    <title>Bênh viện da liễu Trung Ương</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./font-awesome/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="./jquery/jquery.js"></script>
+  </head>
+
+  <body>
+    <!-- main header -->
+    <section class="nav-header-wrapper bg-gray-fa border-bottom-ed">
+      <div class="nav-header w-1140 d-flex align-items-center justify-content-between">
+        <div class="nav-header__left d-flex align-items-center">
+          <div class="nav-header__left-item fs-14 px-10">
+            <span>
+              <i class="fas fa-map-marker-alt nav-header__left-icon text-white"></i>
+              15A Phương Mai, Đống Đa, Hà Nội
+            </span>
+          </div>
+          <div class="nav-header__left-item fs-14 px-10">
+            <a href="#">
+              <span>
+                <i class="fas fa-phone-alt nav-header__left-icon text-white"></i>
+                19006951
+              </span>
+            </a>
+          </div>
+          <div class="nav-header__left-item nav-header__left-item--calender fs-14 px-10 icon">
+            <div class="nav-header__left-item-dropdown">
+              <span>
+                <i class="fas fa-clock nav-header__left-icon text-white"></i>
+                Lịch khám
+                <i class="fas fa-caret-down ml-10"></i>
+              </span>
+            </div>
+            <ul class="working-time">
+              <li class="working-time__weekday working-time__item">
+                <h3 class="working-time__title">Ngày thường</h3>
+                <div class="working-time-Intime">
+                  <h3 class="working-time-Intime-title">Trong giờ</h3>
+                  <p class="work">Sáng: 7h00-12h00</p>
+                  <p class="work">Chiều: 13h30-16h30</p>
+                </div>
+                <div class="working-time-Overtime">
+                  <h3 class="working-time-Overtime-title">Ngoài giờ</h3>
+                  <p class="work">Sáng: 5h45-7h00</p>
+                  <p class="work">Chiều: 16h30- 18h00</p>
+                </div>
+              </li>
+              <li class="working-time__weekend working-time__item">
+                <h3 class="working-time__title">Thứ 7 – Chủ nhật</h3>
+                <div class="working-time-Intime">
+                  <h3 class="working-time-Intime-title">Trong giờ</h3>
+                  <p class="work">Sáng: 7h30-12h00</p>
+                  <p class="work">Chiều: 14h-17h30</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-header__right d-flex align-items-center">
+          <div class="nav-header__right-item">
+            <a href="#" class="fs-13 text-uppercase px-10">Khoa phòng</a>
+          </div>
+          <div class="nav-header__right-item">
+            <a href="#" class="nav-header__right-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="nav-header__right-yt">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="nav-header__right-item">
+            <div class="nav-header__right-lang">
+              <a href="#" class="menu-lang-en" title="English">EN</a>
+            </div>
+            <div class="nav-header__right-lang active">
+              <a href="#" class="menu-lang-vn" title="Vietnamese">VN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main header -->
+    <!-- sub menu mb -->
+    <section class="sub-menu-mb-wrapper d-lg-none d-block">
+      <div class="sub-menu-mb">
+        <!-- close -->
+        <div class="close-sub-menu">
+          <i class="fas fa-times text-red-cc0 fs-24"></i>
+        </div>
+        <!-- end close -->
+        <!-- content -->
+        <ul class="sub-menu-mb-content">
+          <!--  -->
+          <li class="sub-menu-mb-item sub-menu-mb-item--search">
+            <div class="search-mb">
+              <form action="">
+                <div class="d-flex align-items-center position-relative">
+                  <input type="text" class="form-control-t form-search-mb fs-12" placeholder="Tìm kiếm...">
+                  <button class="btn-search-mb fs-14 "><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!--  -->
+          <li class="sub-menu-mb-item bg-gray-f9">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class=" fw-600 fs-16 text-uppercase">Trang nhất</a>
+            </div>
+          </li>
+          <!--  -->
+          <li class="sub-menu-mb-item">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class=" fw-600 fs-16 text-uppercase">Đời sống</a>
+              <i class="fas fa-angle-down sub-menu-mb-item__icon"></i>
+            </div>
+            <ul class="sub-menu-mb-children">
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+            </ul>
+          </li>
+          <!--  -->
+          <li class="sub-menu-mb-item">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#" class=" fw-600 fs-16 text-uppercase">Đời sống</a>
+              <i class="fas fa-angle-down sub-menu-mb-item__icon"></i>
+            </div>
+            <ul class="sub-menu-mb-children">
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+              <li class="sub-menu-mb-children-item">
+                <a href="#" class="sub-menu-mb-children-item__link">Về chúng tôi</a>
+              </li>
+            </ul>
+          </li>
+          <!-- working time -->
+          <li>
+            <ul class="sub-menu-mb-working-time fs-15 font-primary">
+              <!--  -->
+              <li class="sub-menu-mb-working-time-item">
+                <h3 class="text-uppercase">ngày thường</h3>
+                <ul>
+                  <li>
+                    <h3>Trong giờ</h3>
+                    <ul>
+                      <li>Sáng: 7h00 - 12h00</li>
+                      <li>Chiều: 13h30 - 16h30</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3>Ngoài giờ giờ</h3>
+                    <ul>
+                      <li>Sáng: 5h45 - 7h00</li>
+                      <li>Chiều: 16h30 - 18h00</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="sub-menu-mb-working-time-item">
+                <h3 class="text-uppercase">Thứ 7 - Chủ nhật</h3>
+                <ul>
+                  <li>
+                    <ul>
+                      <li>Sáng: 7h30 - 12h00</li>
+                      <li>Chiều: 14h00 - 17h30</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+            </ul>
+          </li>
+          <!-- end working time -->
+          <!-- info -->
+          <li>
+            <aside id="sow-editor-2" class="widget widget_sow-editor">
+              <h3>TRANG THÔNG TIN ĐIỆN TỬ - BỆNH VIỆN DA LIỄU TRUNG ƯƠNG</h3>
+              <div class="addressinfo-mb">
+                <p>Địa chỉ: 15A - Phương Mai - Quận Đống Đa - Hà Nội<br>
+                Điện thoại: 024.32222944<br>
+                Email: benhviendalieutrunguong@dalieu.vn<br>
+                Giấy phép số 79/GP-TTĐT do Cục PTTH và TTĐT - Bộ TT&amp;TT cấp ngày 30/6/2016.<br>
+                Trưởng ban biên tập: PGS.TS Nguyễn Văn Thường - Giám đốc Bệnh viện<br>
+                Copyright: National hospital of dermatology and venereology<br>
+                Bản quyền: Bệnh viện Da liễu Trung ương
+                Ghi rõ nguồn: Bệnh viện Da liễu Trung ương hoặc https://dalieu.vn khi sử dụng lại thông tin từ website này
+                </p>
+              </div>
+            </aside>
+          </li>
+          <!-- end info -->
+        </ul>
+        <!-- end content -->
+
+        
+      </div>
+    </section>
+    <!-- end sub menu mb -->
+    <!-- header -->
+    <header id="header">
+      <!-- navigation bar-->
+      <section class="navigation-bar-wrapper bg-white">
+        <div class="w-1140 navigation-bar">
+          <!-- logo -->
+          <div class="navigation-bar__logo">
+            <a href="#">
+              <img src="./images/logo-full-green-new.svg" alt="" class="navigation-bar__logo-img">
+            </a>
+          </div>
+          <!-- end logo -->
+          <!-- pc -->
+          <ul class="navigation-bar-list d-flex align-items-center">
+            <li class="navigation-bar-item navigation-bar-item-hide">
+              <div class="navigation-bar-item__title fw-600 text-uppercase">
+                <a href="#" class="">Trang chủ</a>
+              </div>
+            </li>
+            <li class="navigation-bar-item navigation-bar-item-hide">
+              <div class="navigation-bar-item__title font-primary fw-600 text-uppercase">
+                <a href="#" class="">Giới thiệu</a>
+              </div>
+              <ul class="navigation-bar-item__dropdown">
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Về chúng tôi</a>
+                  <ul class="navigation-bar-item__dropdown-children">
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                  <ul class="navigation-bar-item__dropdown-children">
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                    <li class="navigation-bar-item__children-secondary">
+                      <a href="#" class="">Thời sự</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-bar-item navigation-bar-item-hide">
+              <div class="navigation-bar-item__title font-primary fw-600 text-uppercase">
+                <a href="#" class="">Hội nghị - hội thảo</a>
+              </div>
+              <ul class="navigation-bar-item__dropdown">
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+                <li class="navigation-bar-item__children">
+                  <a href="#" class="">Thời sự</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-bar-item fs-20 navigation-search">
+              <a href="#" class="text-blue-246">
+                <i class="fas fa-search"></i>
+              </a>
+              <div class="navigation-search-form">
+                <form action="">
+                  <input type="search" class="form-control-t search-header-input">
+                </form>
+              </div>
+            </li>
+          </ul>
+          <!-- end pc -->
+
+          <!-- mb -->
+          <div class="navigation-bar-mb align-items-center">
+            <div class="nav-header__right-item">
+              <div class="nav-header__right-lang">
+                <a href="#" class="menu-lang-en" title="English">EN</a>
+              </div>
+              <div class="nav-header__right-lang active">
+                <a href="#" class="menu-lang-vn" title="Vietnamese">VN</a>
+              </div>
+            </div>
+
+            <div class="menu-bar-icon-mb ml-10 show-submenu">
+              <div class="bar-icon-mb"></div>
+            </div>
+          </div>
+          <!-- end mb -->
+        </div>
+      </section>
+      <!-- end navigation bar-->
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      <!-- about us -->
+        <section class="about-us-wrapper fw-300 w-1140">
+            <div class="about-us">
+                <!-- left -->
+                <div class="about-us__left">
+                    <img src="./images/7.jpg" alt="">
+                </div>
+                <!-- end left -->
+                <!-- right -->
+                <div class="about-us__right">
+                    <div class="about-us__title fs-18 text-black text-uppercase fw-500">Về chúng tôi</div>
+                    <h2 class="about-us__heading font-primary fs-30 fw-500">Bệnh viên chuyên khoa đầu ngành về chuyên ngành Da liễu</h2>
+                    <p class="about-us__des fs-15 text-black font-primary">Bệnh viện Da liễu Trung ương là Bệnh viện chuyên khoa đầu ngành Da liễu có chức năng : Nghiên cứu mô hình bệnh tật, các phương pháp chẩn đoán, điều trị, dự phòng và phục hồi chức năng các bệnh thuộc chuyên ngành bệnh Phong và Da liễu, Đào tạo cán bộ, công tác khám, chữa bệnh và phục hồi chức năng, Phẫu thuật tạo hình thẩm mỹ, Săn sóc da,Chỉ đạo tuyến, Hợp tác quốc tế….</p>
+                </div>
+                <!-- end right -->
+            </div>
+        </section>
+      <!-- end about us -->
+      
+      <!-- lich su hinh thanh -->
+      <section class="history-begins-wrapper ">
+          <div class="history-begins w-1140">
+              <div class="history-begins__block">
+                  <!-- heading -->
+                  <h3 class="history-begins__heading introduce-heading-1">Lịch sử hình thành</h3>
+                  <!-- end heading -->
+                  <div class="content">
+                      <ul class="listhistory">
+                          <li><time>Tháng 10/1954</time>
+                          <div class="content">Từ khoa “Bệnh lý Nội thương – Da liễu” được hình thành vào tháng hai năm 1954 và Trường Đại học Y Dược trên núi rừng Việt Bắc (Chiêm Hoá, Tuyên Quang), Giáo sư Đặng Vũ Hỷ cùng với 45 cán bộ – công nhân viên kháng chiến chống thực dân xâm lược Pháp về tiếp quản khu ngoài da của Bệnh viện Bạch Mai tháng 10/1954.</div>
+                          </li>
+                          <li><time>Từ tháng 10 năm 1954 đến năm 1972</time>
+                          <div class="content">Giáo sư Đặng Vũ Hỷ – Chủ nhiệm Khoa Da liễu Bệnh viện Bạch Mai kiêm chủ nhiệm Bộ môn Da liễu trường Đại học Y Hà Nội. Giáo sư Lê Kinh Duệ – Phó Chủ nhiệm Bộ môn</div>
+                          </li>
+                          <li><time>Từ năm 1964</time>
+                          <div class="content">Giáo sư Lê Tử Vân được cử làm Phó Chủ nhiệm Khoa Da liễu Bệnh viện Bạch Mai</div>
+                          </li>
+                          <li><time>Sau khi Giáo sư Đặng Vũ Hỷ qua đời năm 1972, cho tới năm 1981</time>
+                          <div class="content">Giáo sư Lê Kinh Duệ được bổ nhiệm làm Chủ nhiệm khoa Da liễu Bệnh viện Bạch Mai kiêm Chủ nhiệm Bộ môn Da liễu trường Đại học Y Hà Nội. Giáo sư Lê Tử Vân giữ chức Phó Chủ nhiệm khoa, Phó Chủ nhiệm Bộ môn. Giáo sư Nguyễn Thị Đào – Làm Phó Chủ nhiệm Bộ môn.</div>
+                          </li>
+                          <li><time>Ngày 28 tháng giêng năm 1982</time>
+                          <div class="content">Bộ Y tế ra Quyết định số 70/BYT-QĿ thành lập Viện Da liễu Việt Nam trực thuộc Bộ Y tế nằm trong Bệnh viện Bạch Mai.</div>
+                          </li>
+                          <li><time>Ngày 30/3/2006</time>
+                          <div class="content">Thủ tướng Chính phủ ra quyết định số 486/QĐ-TTg về việc thành lập Viện Da liễu Quốc gia trực thuộc Bộ Y tế</div>
+                          </li>
+                          <li><time>Ngày 13/11/2009</time>
+                          <div class="content">Bộ Y tế ban hành Quyết định số 4453/QĐ-BYT về việc đổi tên Viện Da liễu Quốc gia thành Bệnh viện Da liễu Trung ương trực thuộc Bộ Y tế</div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- end lich su hinh thanh -->
+
+      <!-- chuc nang va nhiem vu -->
+      <section class="function-misson-wrapper w-1140">
+          <div class="function-misson">
+            <h2 class="main-heading fs-24 text-blue-246 text-uppercase fw-600 pb-10">chức năng và nhiệm vụ</h2>
+            <p class="main-sapo fs-15 text-black font-primary text-center fw-300 mb-20 pb-20">Bệnh viện Da liễu Trung ương là Bệnh viện chuyên khoa đầu ngành về chuyên ngành Da liễu có chức năng</p>
+            <!-- content -->
+            <div class="function-misson-content">
+                <!-- item -->
+                <div class="function-misson-item">
+                    <img src="./images/icon3.png" alt="" class="function-misson-item__img">
+                    <h3 class="function-misson-item__text">Đào tạo chuyên sâu da liễu</h3>
+                  </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="function-misson-item">
+                    <img src="./images/icon1.png" alt="" class="function-misson-item__img">
+                    <h3 class="function-misson-item__text">Đào tạo cán bộ</h3>
+                  </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="function-misson-item">
+                    <img src="./images/icon2.png" alt="" class="function-misson-item__img">
+                    <h3 class="function-misson-item__text">Khám chữa bệnh</h3>
+                  </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="function-misson-item">
+                    <img src="./images/icon5-1.png" alt="" class="function-misson-item__img">
+                    <h3 class="function-misson-item__text">Chỉ đạo tuyến</h3>
+                  </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="function-misson-item">
+                    <img src="./images/icon4-1.png" alt="" class="function-misson-item__img">
+                    <h3 class="function-misson-item__text">Hợp tác quốc tế</h3>
+                  </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="function-misson-item">
+                    <img src="./images/icon6-1.png" alt="" class="function-misson-item__img">
+                    <h3 class="function-misson-item__text">Quản lý kinh tế trong bệnh viện</h3>
+                  </div>
+                <!-- end item -->
+            </div>
+            <!-- end content -->
+          </div>
+      </section>
+      <!-- end chuc nang va nhiem vu -->
+
+      <!-- ban giam doc -->
+      <section class="bg-ed">
+        <div class="main-team-doctors-wrapper">
+          <div class="main-team-doctors w-1140">
+          <!-- heading -->
+          <h2 class="main-heading fs-24 text-blue-246 text-uppercase fw-600 pb-10">ban giám đốc</h2>
+          <!-- end heding -->
+
+          <!-- container -->
+          <div class="main-team-doctors-container">
+            <!-- item -->
+            <div class="main-team-doctors-item">
+              <!-- img -->
+              <div class="main-team-doctors__img">
+                <div class="">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3">
+                      <img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end img -->
+              <!-- content -->
+              <div class="main-team-doctors__content">
+                <h3 class="main-team-doctors__heading fs-16 font-secondary">
+                  <a href="#" class=" text-blue-246 fw-600">BS.CKII. Đặng Bích Diệp</a>
+                </h3>
+                <p class="main-team-doctors__des fs-15 text-gray-443 font-primary fw-300 pb-12">Phó Trưởng Khoa Nghiên cứu ứng dụng công nghệ tế bào gốc</p>
+                <a href="#" class="fs-15  font-primary text-blue-246 fw-300">Xem chi tiết</a>
+              </div>
+              <!-- end content -->
+            </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="main-team-doctors-item">
+              <!-- img -->
+              <div class="main-team-doctors__img">
+                <div class="">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3">
+                      <img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end img -->
+              <!-- content -->
+              <div class="main-team-doctors__content">
+                <h3 class="main-team-doctors__heading fs-16 font-secondary">
+                  <a href="#" class=" text-blue-246 fw-600">BS.CKII. Đặng Bích Diệp</a>
+                </h3>
+                <p class="main-team-doctors__des fs-15 text-gray-443 font-primary fw-300 pb-12">Phó Trưởng Khoa Nghiên cứu ứng dụng công nghệ tế bào gốc</p>
+                <a href="#" class="fs-15  font-primary text-blue-246 fw-300">Xem chi tiết</a>
+              </div>
+              <!-- end content -->
+            </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="main-team-doctors-item">
+              <!-- img -->
+              <div class="main-team-doctors__img">
+                <div class="">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3">
+                      <img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end img -->
+              <!-- content -->
+              <div class="main-team-doctors__content">
+                <h3 class="main-team-doctors__heading fs-16 font-secondary">
+                  <a href="#" class=" text-blue-246 fw-600">BS.CKII. Đặng Bích Diệp</a>
+                </h3>
+                <p class="main-team-doctors__des fs-15 text-gray-443 font-primary fw-300 pb-12">Phó Trưởng Khoa Nghiên cứu ứng dụng công nghệ tế bào gốc</p>
+                <a href="#" class="fs-15  font-primary text-blue-246 fw-300">Xem chi tiết</a>
+              </div>
+              <!-- end content -->
+            </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="main-team-doctors-item">
+              <!-- img -->
+              <div class="main-team-doctors__img">
+                <div class="">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3">
+                      <img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end img -->
+              <!-- content -->
+              <div class="main-team-doctors__content">
+                <h3 class="main-team-doctors__heading fs-16 font-secondary">
+                  <a href="#" class=" text-blue-246 fw-600">BS.CKII. Đặng Bích Diệp</a>
+                </h3>
+                <p class="main-team-doctors__des fs-15 text-gray-443 font-primary fw-300 pb-12">Phó Trưởng Khoa Nghiên cứu ứng dụng công nghệ tế bào gốc</p>
+                <a href="#" class="fs-15  font-primary text-blue-246 fw-300">Xem chi tiết</a>
+              </div>
+              <!-- end content -->
+            </div>
+            <!-- end item -->
+          </div>
+          <!-- end container -->
+          <img src="./images/bgemployment.png" alt="" class="main-team-doctors__bg">
+          </div>
+        </div>
+      </section>
+      <!-- end ban giam doc -->
+
+      <!-- he thong to chuc -->
+      <section class="system-wrapper w-1140">
+        <div class="system-block">
+            <!-- heading -->
+            <h3 class="introduce-heading-1">hệ thống tổ chức</h3>
+            <!-- end heading -->
+            <!-- sapo -->
+            <p class="main-sapo fs-15 text-black font-primary fw-300 mb-20 pb-20">Hệ thống tổ chức của Bệnh viện Da liễu Trung ương hiện nay gồm khối các khoa phòng chức năng, các khoa lâm sàng và các khoa cận lâm sàng</p>
+            <!-- end sapo -->
+
+            <!-- container -->
+            <div class="system-container">
+                <!-- column -->
+                <div class="system-column">
+                    <!-- block -->
+                    <div class="system-column-block">
+                        <!-- heading -->
+                        <h5 class="system-column-heading">Các phòng chức năng</h5>
+                        <!-- end heading -->
+                        <ul class="system-column-list">
+                            <li class="system-column-item">Phòng tổ chức cán bộ</li>
+                            <li class="system-column-item">
+                                Trung tâm đào tạo và chỉ đạo tuyến bao gồm các phòng:
+                                <ul class="system-column-common">
+                                    <li>Phòng đào tạo</li>
+                                    <li>Phòng đào tạo</li>
+                                    <li>Phòng đào tạo</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end block -->
+                </div>
+                <!-- end column -->
+                <!-- column -->
+                <div class="system-column">
+                    <!-- block -->
+                    <div class="system-column-block">
+                        <!-- heading -->
+                        <h5 class="system-column-heading">Các phòng chức năng</h5>
+                        <!-- end heading -->
+                        <ul class="system-column-list">
+                            <li class="system-column-item">Phòng tổ chức cán bộ</li>
+                            <li class="system-column-item">
+                                Trung tâm đào tạo và chỉ đạo tuyến bao gồm các phòng:
+                                <ul class="system-column-common">
+                                    <li>Phòng đào tạo</li>
+                                    <li>Phòng đào tạo</li>
+                                    <li>Phòng đào tạo</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end block -->
+                </div>
+                <!-- end column -->
+                <!-- column -->
+                <div class="system-column">
+                    <!-- block -->
+                    <div class="system-column-block">
+                        <!-- heading -->
+                        <h5 class="system-column-heading">Các phòng chức năng</h5>
+                        <!-- end heading -->
+                        <ul class="system-column-list">
+                            <li class="system-column-item">Phòng tổ chức cán bộ</li>
+                            <li class="system-column-item">
+                                Trung tâm đào tạo và chỉ đạo tuyến bao gồm các phòng:
+                                <ul class="system-column-common">
+                                    <li>Phòng đào tạo</li>
+                                    <li>Phòng đào tạo</li>
+                                    <li>Phòng đào tạo</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end block -->
+                </div>
+                <!-- end column -->
+            </div>
+            <!-- end container -->
+        </div>
+      </section>
+      <!-- he thong to chuc -->
+
+      <!-- tong quat ve benh vien da lieu tw -->
+      <section class="genarality-wrapper">
+          <div class="generality-block">
+              <div class="generality-icon"><i class="fas fa-play"></i></div>
+              <div class="generality-title fs-21 font-primary text-uppercase fw-600 text-center">Tổng quát về bệnh viện da liễu trung ương</div>
+          </div>
+      </section>
+      <!-- end tong quat ve benh vien da lieu tw -->
+
+      <!-- thanh qua  -->
+      <section class="achievement-wrapper w-1140">
+          <div class="achievement-block">
+              <!-- heading -->
+              <h3 class="introduce-heading-1">thành quả đạt được</h3>
+              <!-- end heading -->
+              <!-- sapo -->
+              <p class="main-sapo fs-15 text-black font-primary fw-300 mb-20 pb-20">Từ khi thành lập Khoa Da liễu Bệnh viện Bạch Mai cho tới nay là Bệnh viện Da liễu Trung ương, đã thực hiện và chỉ đạo được một số công việc nổi bật sau:</p>
+              <!-- end sapo -->
+
+              <!-- container -->
+              <div class="achievement-container">
+                  <!-- item -->
+                  <div class="achievement-item">
+                      <div class="achievement-heading">
+                          <h5 class="achievement-title">Xây dựng màng lưới chuyên khoa</h5>
+                          <div class="achievement-icon">
+                              <i class="fas fa-plus"></i>
+                              <i class="fas fa-minus"></i>
+                          </div>
+                      </div>
+                      <div class="achievement-content">
+                          <p>Cho tới nay 100% các tỉnh/thành (63/63) trong cả nước đều đã có cơ sở chuyên khoa Da liễu. Tuỳ theo điều kiện cụ thể về tổ chức biên chế cán bộ, theo địa dư và theo phương pháp quản lý của từng địa phương mà các cơ sở Da liễu ở từng địa phương mang những tên gọi khác nhau (Bệnh viện Da liễu; Bệnh viện Phong và Da liễu;  Trung tâm Da liễu; khoa Da liễu nằm trong Trung tâm phòng chống bệnh xã hội, Trung tâm Y tế dự phòng), nhưng chức năng, nhiệm vụ công tác và mục tiêu hoạt động chuyên khoa đều thống nhất</p>
+                      </div>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="achievement-item">
+                      <div class="achievement-heading">
+                          <h5 class="achievement-title">Xây dựng màng lưới chuyên khoa</h5>
+                          <div class="achievement-icon">
+                              <i class="fas fa-plus"></i>
+                              <i class="fas fa-minus"></i>
+                          </div>
+                      </div>
+                      <div class="achievement-content">
+                          <p>Cho tới nay 100% các tỉnh/thành (63/63) trong cả nước đều đã có cơ sở chuyên khoa Da liễu. Tuỳ theo điều kiện cụ thể về tổ chức biên chế cán bộ, theo địa dư và theo phương pháp quản lý của từng địa phương mà các cơ sở Da liễu ở từng địa phương mang những tên gọi khác nhau (Bệnh viện Da liễu; Bệnh viện Phong và Da liễu;  Trung tâm Da liễu; khoa Da liễu nằm trong Trung tâm phòng chống bệnh xã hội, Trung tâm Y tế dự phòng), nhưng chức năng, nhiệm vụ công tác và mục tiêu hoạt động chuyên khoa đều thống nhất</p>
+                      </div>
+                  </div>
+                  <!-- end item -->
+                  <!-- item -->
+                  <div class="achievement-item">
+                      <div class="achievement-heading">
+                          <h5 class="achievement-title">Xây dựng màng lưới chuyên khoa</h5>
+                          <div class="achievement-icon">
+                              <i class="fas fa-plus"></i>
+                              <i class="fas fa-minus"></i>
+                          </div>
+                      </div>
+                      <div class="achievement-content">
+                          <p>Cho tới nay 100% các tỉnh/thành (63/63) trong cả nước đều đã có cơ sở chuyên khoa Da liễu. Tuỳ theo điều kiện cụ thể về tổ chức biên chế cán bộ, theo địa dư và theo phương pháp quản lý của từng địa phương mà các cơ sở Da liễu ở từng địa phương mang những tên gọi khác nhau (Bệnh viện Da liễu; Bệnh viện Phong và Da liễu;  Trung tâm Da liễu; khoa Da liễu nằm trong Trung tâm phòng chống bệnh xã hội, Trung tâm Y tế dự phòng), nhưng chức năng, nhiệm vụ công tác và mục tiêu hoạt động chuyên khoa đều thống nhất</p>
+                      </div>
+                  </div>
+                  <!-- end item -->
+              </div>
+              <!-- end container -->
+          </div>
+      </section>
+      <!-- end thanh qua  -->
+
+      <!-- block final -->
+      <section class="introduce-final-wrapper w-1140">
+          <div class="introduce-final-block">
+            <div class="introduce-final">
+                <!-- item -->
+                <div class="introduce-final-item">
+                  <a href="#" class="main-panel-item__link">
+                    <img src="./images/calender.png" alt="" class="main-panel-item__img">
+                    <h3 class="main-panel-item__text">Lịch khám</h3>
+                    <p>T2 – T6 : 6h00-18h00<br>
+                        T7 – CN : 7h30-17h30</p>
+                  </a>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="introduce-final-item">
+                  <a href="#" class="main-panel-item__link">
+                    <img src="./images/clock.png" alt="" class="main-panel-item__img">
+                    <h3 class="main-panel-item__text">Giờ thăm</h3>
+                    <p>Sáng: từ 06h00 đến 07h00<br>
+                        Trưa : từ 11h00 đến 12h00<br>
+                        Chiều : từ 16h00 đến 21h00</p>
+                  </a>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="introduce-final-item">
+                  <a href="#" class="main-panel-item__link">
+                    <img src="./images/icon6.png" alt="" class="main-panel-item__img">
+                    <h3 class="main-panel-item__text">Quy trình đăng ký khám bệnh</h3>
+                  </a>
+                </div>
+                <!-- end item -->
+                <!-- item -->
+                <div class="introduce-final-item">
+                  <a href="#" class="main-panel-item__link">
+                    <img src="./images/icon7.png" alt="" class="main-panel-item__img">
+                    <h3 class="main-panel-item__text">Chi phí</h3>
+                    <p>Bảng chi phí khám chữa bệnh tại Bệnh Viện Da Liễu Trung Ương do Bộ Y Tế phê duyệt</p>
+                  </a>
+                </div>
+                <!-- end item -->
+              </div>
+          </div>
+      </section>
+      <!-- end block final -->
+
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer id="footer" class="bg-blue-344">
+      <!-- back top -->
+      <div id="back-top"><i class="fas fa-angle-up text-white"></i></div>
+      <!-- end back top -->
+
+      <!-- phone -->
+      <div class="phonemenow is-animating">	
+        <div class="ringphone">	</div>
+        <div class="phonenumber">
+          <a class="" href="tel:1900 6951">1900 6951</a>
+        </div>
+      </div>
+      <!-- end phone -->
+      <div class="w-1140">
+        <!-- map -->
+        <section class="map-block bg-white">
+          <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7143082213884!2d105.83677341540199!3d21.004086193994933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad0c51c0619b%3A0xcb922ff21ced459d!2zQuG7h25oIHZp4buHbiBEYSBMaeG7hXUgVHJ1bmcgxq_GoW5n!5e0!3m2!1svi!2s!4v1652778313366!5m2!1svi!2s" width="1060" height="518" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+        <!-- end map -->
+        <!-- address info -->
+        <div class="addressinfo text-center font-primary">
+          <h3 class="text-white mb-10">TRANG THÔNG TIN ĐIỆN TỬ - BỆNH VIỆN DA LIỄU TRUNG ƯƠNG</h3>
+          <p>Địa chỉ: 15A - Phương Mai - Quận Đống Đa - Hà Nội<br>
+          Điện thoại: 024.32222944<br>
+          Email: benhviendalieutrunguong@dalieu.vn<br>
+          Giấy phép số 79/GP-TTĐT do Cục PTTH và TTĐT - Bộ TT&amp;TT cấp ngày 30/6/2016.<br>
+          Trưởng ban biên tập: PGS.TS Nguyễn Văn Thường - Giám đốc Bệnh viện<br>
+          Copyright: National hospital of dermatology and venereology<br>
+          Bản quyền: Bệnh viện Da liễu Trung ương
+          Ghi rõ nguồn: Bệnh viện Da liễu Trung ương hoặc https://dalieu.vn khi sử dụng lại thông tin từ website này
+          </p>
+        </div>
+        <!-- end address info -->
+  
+        <!-- social -->
+        <div class="footer-social d-flex align-items-center justify-content-center">
+          <a href="#" class="footer-social-item footer-social-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="footer-social-item footer-social-yt">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <!-- end social -->
+        
+        <!-- navbar footer -->
+        <ul class="footer-navbar fs-14 d-flex align-items-center justify-content-center font-primary">
+          <li class="footer-navbar-item">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Giới thiệu</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Hội nghị - Hội thảo</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Tin hoạt động</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Kỹ thuật cao</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Chuyên môn</a>
+          </li>
+          <li class="footer-navbar-item">
+            <a href="#">Giáo dục sức khỏe</a>
+          </li>
+        </ul>
+        <!-- end navbar footer -->
+        
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./slick/slick-1.8.1/slick/slick.js"></script>
+    <script src="./font-awesome/fontawesome-free-5.15.4-web/js/fontawesome.min.js"></script>
+    <script src="./js/ResizeSensor.js"></script>
+    <script src="./js/theia-sticky-sidebar.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
