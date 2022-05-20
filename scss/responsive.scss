@@ -136,6 +136,52 @@
     padding: 30px 15px;
   }
   // ==================================================================================gioi thieu
+  .about-us,
+  .system-container,
+  .function-misson-content,
+  .introduce-final {
+    display: block;
+  }
+  .about-us__left {
+    width: 100%;
+    padding-right: 0;
+  margin-left: 0;
+}
+.about-us__right {
+  padding: 15px;
+}
+.history-begins,
+.function-misson,
+.system-block,
+.achievement-block,
+.introduce-final-block{
+  padding: 50px 15px;
+}
+.history-begins__block {
+  width: 100%;
+}
+.introduce-final-item {
+  width: 100%;
+}
+.function-misson-item:nth-child(1){
+  background: #43b1d2;
+}
+.function-misson-item:nth-child(2){
+  background: #3eb6c6;
+}
+.function-misson-item:nth-child(3){
+  background: #3dbbba;
+}
+.function-misson-item:nth-child(4){
+  background: #37c3a8;
+}
+.function-misson-item:nth-child(5){
+  background: #0188c8;
+}
+// ==================================================================================popup
+.popup-about-us-block {
+  width: 90%;
+}
 }
 
 @media (max-width: 63.9375em) {

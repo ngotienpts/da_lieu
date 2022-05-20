@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // show thanh qua dat duoc
   var achievements = document.querySelectorAll('.achievement-heading');
 
+  // show popup
+  var showPopupAboutUs = document.querySelector('.generality-icon');
+  var popupAboutUs = document.querySelector('.popup-about-us-wrapper');
+  var closePopupAboutUs = document.querySelector('.close-popup-about-us')
   const app = {
     // su ly cac su kien
     handleEvent: function () {
@@ -71,6 +75,24 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         })
       }
+
+      // show popup
+      if(showPopupAboutUs){
+        showPopupAboutUs.onclick = function(){
+          if(popupAboutUs){
+            if(popupAboutUs.classList.contains('show')){
+              popupAboutUs.classList.remove('show')
+            }else {
+              popupAboutUs.classList.add('show')
+            }
+          }
+        }
+        if(closePopupAboutUs){
+          closePopupAboutUs.onclick = function(){
+            popupAboutUs.classList.remove('show');
+          }
+        }
+      }
       if(widthDoc && widthDoc.clientWidth < 768){
         // slide idea
         _this.slideFeatures();
@@ -78,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // hide cac element khi click ra ngoai
       document.addEventListener("click", function (e) {});
     },
-    // slide idea
+    // slide top
     slideTop: function () {
       $(".slide-top").slick({
         infinite: true,
@@ -195,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.handleEvent();
       // window scroll
       this.windowScroll();
-      // slide idea
+      // slide top
       this.slideTop();
       // slide doctors
       this.slideDoctor();
